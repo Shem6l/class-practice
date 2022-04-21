@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(homepic.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+ul li{
+    display: inline-block;
+    padding-left: 1px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    background-color:rgb(157, 201, 69);
+}
+
+ul li.active a{
+    background-color:rgb(157, 201, 69);
+}
+
+.nav{
+    background-color:rgb(39, 39, 39);
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    overflow: hidden;
+}
+
+.dropdown{
+    display: inline-block;
+    position:relative;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: #fff;
+    font-size: 43px;
+}
+
+section{
+    position:relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+
+section::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    border-radius: 50% 50% 0 0/100% 100% 0 0;
+    transform:scaleX(1.5);
+}
+
+section .content{
+    position:relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align:center;
+}
+
+section .content h2{
+    margin:0;
+    padding: 0;
+    color:#fff;
+    font-size: 3em;
+}
+
+section .content p{
+    color:#fff;
+    font-size: 1.2em;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .box{
+    position: relative;
+    width: 350px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius:4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container .box .icon1{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    color: rgb(252, 252, 252);
+    background: url(ocean-coral-spring.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    /* font-size: 17px;
+    font-weight: ; */
+    transition: 3s;
+
+}
+
+.container .box .icon2{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    color: rgb(252, 252, 252);
+    background: url(party.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    /* font-size: 17px;
+    font-weight: ; */
+    transition: 3s;
+
+}
+
+.container .box .icon3{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    color: rgb(252, 252, 252);
+    background: url(Kool-Runnings-Waterpark-Negril-Jamaica.jpg);
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    /* font-size: 17px;
+    font-weight: ; */
+    transition: 3s;
+
+}
+
+.container .box:nth-child(1):hover .icon1{
+    box-shadow: 0 0 0 400px red;
+}
